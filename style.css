@@ -73,3 +73,29 @@
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
+
+.footer {
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    color: black;
+    text-align: left;
+    border-top: 3px solid black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width:480px) {
+    .header img {
+        width: 100px;
+        height: 100px;
+    }
+    .top-bar .left-text {
+        font-size: 15px;
+    }
+
+    .navbar {
+        padding-top: 224px;
+    }
+}
