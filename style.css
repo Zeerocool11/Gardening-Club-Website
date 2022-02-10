@@ -13,34 +13,42 @@
 
 .header {
     padding-top: 0px;
+    background: white;
     color: var(--phthalogreen);
     font-size: 30px;
     width: 100%;
     position: absolute;
     border-bottom: 10px solid var(--phthalogreen);
-    background-image: url('Images/woods.jpg');
+    background-image: url('Images/plants.jpg');
     background-position: center;
+    background-repeat: repeat;
+    background-size: fill;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .top-bar {
     background-color: var(--ferngreen);
     padding: 10px;
+    padding-bottom: 1px;
     height: 40px;
     border-bottom: 10px solid var(--phthalogreen);
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .top-bar .left-text {
     float: left;
     padding-left: 10px;
     padding-top: 5px;
+    padding-bottom: none;
     font-family: 'Montserrat', sans-serif;
     color: var(--phthalogreen);
 }
 
 .top-bar .right-logos {
     float: right;
-    padding-right: 10px;
     padding-top: 1px;
 }
 
@@ -50,6 +58,7 @@
     margin-bottom: none;
     padding-bottom: 20px;
     color: white;
+    font-weight: bold;
 }
 
 .header .header-logo {
@@ -92,7 +101,15 @@
 .navbar li a:hover {
     background-color: var(--phthalogreen);
     color: white;
+    font-weight: bold;
 }
+
+.navbar .active {
+    background-color: var(--phthalogreen);
+    color: white;
+    font-weight: bold;
+}
+
 
 .footer {
     position: fixed;
@@ -112,7 +129,7 @@
 
 .body-content {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 5px;
     
 }
 
